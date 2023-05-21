@@ -5,8 +5,8 @@
 git clone https://github.com/kuk4si/Squid_blacklist_updater.git
 ```
 ___
-- LOCATION
-- WGET_FILE_OUTPUT_NAME
-- DB_URL
-- FILENAME_DURING_UNTARRING
-- CUSTOM_BLACKLISTS
+- LOCATION - указывает директирию, где находятся запрещённые списки (по-умолчанию: **/var/squidGuard**)
+- WGET_FILE_OUTPUT_NAME - переименовывает архив после его скачивания (по-умолчанию: **squid_blacklist.tar**)
+- DB_URL - ссылка на черный список.
+- FILENAME_DURING_UNTARRING - после распаковки архива переименовывает директорию в указанное название (по-умолчанию: **blacklists**)
+- CUSTOM_BLACKLISTS - можно указать путь к директории с дополнительными списками, они будут добавляться автоматически каждый раз после переустановки чёрного списка. Можно ничего не указывать. (по-умолчанию: **пусто**)
