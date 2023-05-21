@@ -6,7 +6,7 @@ git clone https://github.com/kuk4si/Squid_blacklist_updater.git
 ```
 ___
 
-## Переменные script.sh
+## Переменные script.sh:
 
 Стандартные пути к **wget** и **tar**:<br/>
 wget=/usr/bin/wget<br/>
@@ -42,4 +42,5 @@ tar=/usr/bin/tar
 (по-умолчанию: пусто)
 
 ```
-## Запуск по времени
+___
+## Запуск по времени:
