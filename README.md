@@ -8,6 +8,11 @@ ___
 
 ## Переменные script.sh
 
+Стандартные пути к **wget** и **tar**:
+wget=/usr/bin/wget
+tar=/usr/bin/tar
+
+
 ```python
 - LOCATION :  указывает директирию, где находятся запрещённые списки
 (по-умолчанию: /var/squidGuard)
