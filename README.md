@@ -44,8 +44,8 @@ tar=/usr/bin/tar<br/>
 (по-умолчанию: пусто)
 ```
 ```python
-LOGDIRECTORY="/var/log/squidDBupdater"
-LOGFILE="${LOGDIRECTORY}/logs"
+- LOGDIRECTORY
+- LOGFILE
 
 Директория и файл с логами
 (При первом запуске скрипт создаст их)
