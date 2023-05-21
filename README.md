@@ -12,6 +12,10 @@ ___
 wget=/usr/bin/wget<br/>
 tar=/usr/bin/tar<br/>
 
+```python
+- OS :  Указывается дистрибутив LINUX [Ubuntu/Gentoo]
+(по-умолчанию: Ubuntu)
+```
 
 ```python
 - LOCATION :  указывает директирию, где находятся запрещённые списки
@@ -39,5 +43,13 @@ tar=/usr/bin/tar<br/>
 Можно ничего не указывать.
 (по-умолчанию: пусто)
 ```
+```python
+LOGDIRECTORY="/var/log/squidDBupdater"
+LOGFILE="${LOGDIRECTORY}/logs"
+
+Директория и файл с логами
+(При первом запуске скрипт создаст их)
+```
+
 ___
 ## Запуск по времени:
