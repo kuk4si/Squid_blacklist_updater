@@ -9,8 +9,8 @@ ___
 ## Переменные script.sh
 
 Стандартные пути к **wget** и **tar**:<br/>
-wget=/usr/bin/wget
-tar=/usr/bin/tar
+wget=/usr/bin/wget<br/>
+tar=/usr/bin/tar<br/>
 
 
 ```python
