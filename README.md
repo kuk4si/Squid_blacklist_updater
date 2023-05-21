@@ -1,4 +1,4 @@
-# Документация Squid_blacklist_updater
+# Документация
 
 ## Установка:
 ```python
