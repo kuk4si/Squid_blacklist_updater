@@ -1,7 +1,7 @@
 # Документация Squid_blacklist_updater
 
 ## Установка:
-git clone [https://github.com/kuk4si/Squid_blacklist_updater.git]()
+git clone <p>https://github.com/kuk4si/Squid_blacklist_updater.git</p>
 ___
 - LOCATION
 - WGET_FILE_OUTPUT_NAME
