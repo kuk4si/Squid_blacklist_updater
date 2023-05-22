@@ -17,11 +17,22 @@ LOGFILE="${LOGDIRECTORY}/logs"
 #----------   Script   -------------
 
 
+sudo echo -e "\n==================== $(date) ====================\n" >> $LOGFILE
 
+(
 sudo mkdir $LOGDIRECTORY
 touch $LOGFILE
 sudo rm -r $LOCATION/$FILENAME_DURING_UNTARRING
-sudo $wget -O $LOCATION/$WGET_FILE_OUTPUT_NAME $DB_URL
+sudo $wget -qO $LOCATION/$WGET_FILE_OUTPUT_NAME $DB_URL
+
+#try download file via WGET
+if [[ "$?" != 0 ]]; then
+    echo "[FATAL ERROR][$(date)] Can't download a file, check DB_URL!"
+    exit 0
+else
+    echo "[$(date)]Success download BACKLISTS"
+fi
+
 
 if [ -z "$FILENAME_DURING_UNTARRING" ]
 then
@@ -57,3 +68,4 @@ then
         echo "[$(date)] Done" >> $LOGFILE
 fi
 
+) >> $LOGFILE 2>&1
